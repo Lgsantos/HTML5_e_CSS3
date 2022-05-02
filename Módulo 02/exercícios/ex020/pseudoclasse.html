@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: aquamarine;
+            border: 1px solid lightgray;
+            text-align: center;
+            height: 200px;
+            width: 100px;
+        }
+        /* 
+        : denotam pseudo-classes
+        Com elas, declaramos como elementos serão estilizados dependendo de seu estado 
+        */
+        div:hover {
+            background-color: bisque;
+        }
+        /*
+        > indica relação de parentesco
+        div > p = p que é filho da div
+        */
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p>Passe o mouse no texto abaixo para ver o que acontece...</p>
+    <div>
+        Passe o mouse aqui.
+        <p>Texto Oculto</p>
+    </div>
+</body>
+</html>

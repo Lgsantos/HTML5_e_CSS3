@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;/* Essa é uma safe combination de fontes para aumentar as chances de pelo menos uma delas ser reconhecida pelo dispositivo que irá mostrar nosso site. As duas primeiras são fontes específicas e a última é uma descrição genérica de um tipo de fonte. Podemos pesquisá-las no Google - CSS Web fonts combinations*/
+            font-size: 1.5em; /* recomendado usar em ou px */
+            /*
+            Medidas absolutas
+            cm, mm, in, px (16px é o tamanho das fontes na maioria dos navegadores), pt, pc (paica). Os dois últimos são da tipografia em papel e não se recomenda utilizar para trabalhos digitais.
+
+            Medidas relativas
+            em (em relação ao tamanho atual da letra M maiúscula da fonte. Geralmente 16px = em), ex (relativo à altura-x da fonte), rem (ralativo à fonte root no body), vw (view width, relativa à largura da view port em %), vh (view higth, relativa à altura da view port em %), %
+            */
+        }
+        h1 {
+            /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; mas o shorhand abaixo facilita as coisas! Existem outros shorthands em CSS!*/
+            font: italic bolder 3em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2 {
+            font: lighter 2em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes em CSS</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum iure debitis, maxime quisquam nesciunt quam voluptatum minima modi unde nemo, placeat fuga at delectus id tempore ad mollitia sapiente sunt?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reiciendis iure praesentium aliquam! Nemo nobis reiciendis dolorem ea minima alias suscipit excepturi, facilis quaerat, animi fugiat at qui in amet!</p>
+    <h2>Capítulo 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium commodi ex beatae, aliquam sequi cupiditate nesciunt labore non a quaerat neque sint quo dolorum cumque praesentium accusamus facere omnis ullam!</p>
+</body>
+</html>

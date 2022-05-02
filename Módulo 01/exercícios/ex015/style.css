@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Regra @charset é para os casos onde há problemas com acentuação na página */
+
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(0, 255, 34);
+}
+p {
+    background-color: rgb(47, 0, 255);
+}

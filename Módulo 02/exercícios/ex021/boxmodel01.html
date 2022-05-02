@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de agrupamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(109, 139, 130);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            margin: auto;
+            padding: 3px;
+        }
+        h1 {
+            text-align: center;
+            margin: 0px;
+        }
+        nav {
+            width:fit-content;
+            margin: 5px auto;
+            padding: 2px;
+            background-color: rgb(171, 252, 225);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
+            border-radius: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(32, 66, 55);
+            margin: 5px;
+        }
+        nav > a:hover {
+            margin: 5px;
+            background-color: rgb(118, 148, 118);
+            color: white;
+        }
+        main {
+            margin: 10px;
+        }
+        section {
+            background-color: rgb(171, 252, 225);
+            box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.479);
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        article {
+            padding: 1px 10px;
+        }
+        article > aside {
+            background-color: rgb(139, 231, 216);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Criando sites</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa eum perspiciatis facere ducimus nobis quisquam et libero commodi laborum nesciunt deserunt optio id reprehenderit qui hic ipsam, sed unde!</p>
+            </article>
+            <article>
+                <h2>Programando em Javascript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum inventore nam deserunt! Eaque voluptatem magnam officia magni asperiores? Dolores ad unde nihil est sit a facilis distinctio iste praesentium error?</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, ea excepturi? Et dolores dolorum excepturi iste repellat ea sit repellendus atque! Excepturi quo eos, consectetur harum reprehenderit suscipit illo reiciendis!</p>
+                <aside>
+                    <p>Artigo escrito por LGS</p>
+                </aside>
+            </article>
+        </section>
+        <aside>
+            <p>Este site foi desenvolvido como parte de meus estudos do curso de HTML5 & CSS do Curso em Vídeo</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Desenvolvido por Luís G. Santos</p>
+    </footer>
+</body>
+</html>

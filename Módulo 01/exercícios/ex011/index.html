@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imagens/imagem-m.png" type="image/png">
+        <img src="./imagens/imagem-g.png" alt="A imagem flexível funciona">
+    </picture>
+    <h1>Áudio</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="./audios/zimbabwe-national-anthem.mp3" type="audio/mp3">
+        <source src="./audios/Zimbabwe_National_Anthem.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio <a href="./audios/zimbabwe-national-anthem.mp3" download="zimbabwe-national-anthem.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <h1>Vídeos</h1>
+    <!-- <video src="./videos/SpaceX_CRS-8_Falcon_9_Rocket_on_Dragon_Return_to_Flight.webm" controls width="600" preload="metadata"></video> -->
+    <video width="600" poster="./videos/spacex.png" controls>
+        <source src="./videos/SpaceX_CRS-8_Falcon_9_Rocket_on_Dragon_Return_to_Flight.webm" type="video/webm">
+        <source src="./videos/A_Royal_Navy_Submarine_Firing_a_Trident_Nuclear_Missile.ogv" type="video/ogv">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video><!-- https://handbrake.fr/ software open source para conversão de vídeos-->
+</body>
+</html>
