@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*necessário para fazer efeito de heading fixo*/
         }
         caption {
             font-size: 1.5em;
@@ -19,12 +20,19 @@
             padding: 10px;
             background-color: lightgray;
         }
+        thead > tr > th {/*necessário para fazer efeito de heading fixo*/
+            position: sticky;
+            top: 0;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: gray;
+        }/*Usar 'odd' ou '2n-1' ao invés de '2n' para efeito zebrado começar no primeiro filho*/
         th, td {
             border: 1px solid black;
             padding: 10px;
         }
         th, tfoot {
-            background-color: grey;
+            background-color: rgb(70, 68, 68);
             color: white;
         }
         .num {
