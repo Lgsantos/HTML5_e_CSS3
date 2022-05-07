@@ -13,6 +13,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -30,6 +36,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
     TABLE
+        CAPTION (legenda)
         THEAD
             TR, TD, TH
         TBODY
@@ -37,9 +44,10 @@
         TFOOT
             TR, TD, TH-->
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -109,7 +117,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>83.000.000</strong></td>
             </tr>
         </tfoot>
